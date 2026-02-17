@@ -1,0 +1,30 @@
+<table>
+  <tbody>
+    {{#each cities}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{lookup ../countries country}}</td>
+        <td>
+          {{#if population}}
+            {{population}} habitants
+          {{else}}
+            <em>Població desconeguda</em>
+          {{/if}}
+        </td>
+        <td>
+          {{#if coastal}}
+            🌊 Costanera
+          {{else}}
+            🏔️ Interior
+          {{/if}}
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+{{#if (lte population 800000)}}
+  <span>Petita</span>
+{{else}}
+  <span>Gran</span>
+{{/if}}
