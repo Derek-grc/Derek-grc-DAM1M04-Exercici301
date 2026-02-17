@@ -1,0 +1,54 @@
+/* Font base */
+body {
+  font-family: 'Segoe UI', Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navegació */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #2c3e50;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Contenidor */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+/* Taula */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 0.7rem; border-bottom: 1px solid #ddd; }
+thead { background-color: #3498db; color: white; }
+
+/* Destacats */
+.badge {
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.coastal { background-color: #d1ecf1; color: #0c5460; }
+.interior { background-color: #f8d7da; color: #721c24; }
+.small { background-color: #d4edda; color: #155724; }
+.large { background-color: #cce5ff; color: #004085; }
+
+/* Avís */
+.warning-box {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 0.8rem;
+  margin: 1rem 0;
+}
