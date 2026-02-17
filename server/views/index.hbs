@@ -1,9 +1,26 @@
-<h1>{{title}}</h1>
-<h2>{{subtitle}}</h2>
-<p class="notice">{{notice}}</p>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/estils.css">     ← AQUÍ, dins del <head>
+</head>
+<body>
+  {{> header}}                                    ← AQUÍ, primera cosa del <body>
 
-{{#if showWarning}}
-  <div class="warning-box">
-    <strong>⚠️ Avís:</strong> Aquest és un exemple...
-  </div>
-{{/if}}
+  <main class="container">
+        <h1>{{title}}</h1>
+    <h2>{{subtitle}}</h2>
+    <p class="notice">{{notice}}</p>
+
+    {{#if showWarning}}
+    <div class="warning-box">
+        <strong>⚠️ Avís:</strong> Aquest és un exemple...
+    </div>
+    {{/if}}
+  </main>
+
+</body>
+</html>
+
